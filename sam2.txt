@@ -1,1 +1,235 @@
-git
+ody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light sky blue */
+}
+
+header {
+    background-color: #87ceeb; /* Sky blue */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between logo, search, and menu */
+}
+
+.logo-container {
+    width: 80px; /* Adjust the width to fit the logo */
+    height: 80px; /* Adjust the height to fit the logo */
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007bff, #28a745);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 25px green;
+    animation: pulse 2s infinite;
+    margin-right: 20px; /* Space between logo and header text */
+    margin-left: 17px;
+}
+
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px; /* Adjust font size for left-aligned logo */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}
+
+.header-text {
+    flex-grow: 2; /* Allows the header text to take remaining space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.slogan {
+    font-size: 17px; /* Size for the slogan */
+    margin: 5px 0;
+    font-weight: bolder; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block; /* Spacing above and below the slogan */
+}
+
+.search-container {
+    display: block;
+    justify-content: center; /* Center the search bar */
+    margin: 0; /* Removed margin to eliminate whitespace */
+    padding: 0; /* Ensure no padding adds whitespace */
+}
+
+.search-container input {
+    padding: 15px;
+    border-radius: 15px; /* Rounded corners for the search box */
+    width: 480px; /* Width of the search input */
+    border: none;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    color: #333; /* Text color */
+}
+
+.search-container input::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+.search-container input:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.search-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 15px; /* Rounded corners for right side */
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.search-container button:hover {
+    background-color: #28a745; /* Darker green on hover */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the menu bar */
+    border-radius: 10px; /* Rounded corners for the menu */
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 5px 0; /* Vertical padding */
+    margin: 20px 0; /* Space above and below the menu */
+    display: inline-block;
+}
+
+.menu-bar {
+    display: flex; /* Use flex for menu items */
+    justify-content: flex-end; /* Align menu items to the right */
+}
+
+.menu-bar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display items in a row */
+}
+
+.menu-bar ul li {
+    margin: 2px 20px; /* Space between menu items */
+}
+
+.menu-bar ul li a,
+.menu-bar ul li button {
+    color: #007bff; /* Change link color to blue */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.menu-bar ul li a:hover,
+.menu-bar ul li button:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Maximum width for better alignment */
+    margin: 0 auto; /* Center the container */
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    background-color: #f9f9f9; /* Light background for products */
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product button {
+    background-color: #32cd32; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.product button:hover {
+    background-color: #28a745; /* Darker green on hover */
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Adjust size as needed */
+    color:rgb(223, 98, 119); /* Pink color for the heart */
+    margin-top: 5px; /* Space above the button */
+}
+
+.like-btn:hover {
+    color:rgb(187, 27, 54) ; /* Darker pink on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #87ceeb; /* Sky blue */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: -200px; /* Hide off-screen */
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar-menu {
+    padding: 20px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu ul li {
+    margin: 10px 0;
+}
+
+#sidebar-toggle {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}

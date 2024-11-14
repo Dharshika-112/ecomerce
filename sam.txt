@@ -1,43 +1,87 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>
-        EMC
-    </title>
-    <link rel="icon" href="pic/iron man.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Verse</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="white" style="color:black;">
-    <center>
-        <h1>Errors make clever🛩️</h1>
-        <h3>Traning | Tech News | Freshers Guide</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam totam animi quas rem fugiat saepe cupidita👍</p>
-        <hr>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=ENLG36BqD8djq4om" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </center>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa nisi vel, reprehenderit eveniet quidem officiis asperiores molestias quibusdam expedita obcaecati aliquam itaque amet distinctio enim quia corrupti sit, voluptatum cupiditate nostrum veniam est. Itaque, suscipit officia odio labore reprehenderit excepturi voluptates modi ipsum esse rem ad ullam repudiandae quam!</p>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum neque sapiente ab recusandae maiores? Aliquam accusantium reiciendis autem provident quia sint aperiam optio ullam! Ipsum vero ea nam quas?</p>
-    <h2>List divide Full stack into 3 parts</h2>
-    <ul>
-        <li>Frondend</li>
-        <li>Backend</li>
-        <li>Database</li>
-    </ul>
-    <h2>Technologies Used for full stack development</h2>
-    <table border="1">
-        <tr>
-            <td>Frontend</td><td>Baxkend</td><td>Database</td>
-        </tr>
-        <tr>
-            <td>CSS</td><td>Pytype</td><td>My SQL</td>
-        </tr>
-        <tr>
-            <td>Javascript</td><td>NOde JS</td><td>AWS</td>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <span class="shop">shop</span>
+                <span class="verse">Verse</span>
+            </div>
+        </div>
+        <div class="header-text">
+            <p class="slogan">FOOT STEP TO DOOR STEP</p>
+        </div>
+        <nav class="search-container">
+            <input type="text" placeholder="Search for products..." aria-label="Search for products">
+            <button type="button" id="search-btn">🔍</button>
+            <button id="mic-btn" aria-label="Use microphone">🎤</button>
+            <button id="camera-btn" aria-label="Use camera">📷</button>
+        </nav>
+        <div class="menu-bar">
+            <ul>
+                <li><button id="like-header-btn" aria-label="Liked Products"><span style="color: green;"">❤️</span></button></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Trolley 🛒</a></li>
+                <li><button id="notify-btn" aria-label="Notifications">🔔</button></li>
+            </ul>
+        </div>
+    </header>
 
-        </tr>
+    <main>
+        <h2>Featured Products</h2>
 
-    </table>
-    <center>
-    <a href="file:///C:/Users/dsdha/Desktop/html%20project/pro-2.html"><button><h3>-->For Registration</h3></button></a>
-    </center>
+        <section class="product-container">
+            <article class="product">
+                <img src="https://via.placeholder.com/150" alt="Image of Product 1 description">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button onclick="addToTrolley('Product 1')" aria-label="Add Product 1 to Trolley">Add to Trolley</button>
+                <button class="like-btn" onclick="toggleLike('Product 1')" aria-label="Like Product 1"><span>❤️</span></button>
+            </article>
+            <article class="product">
+                <img src="https://via.placeholder.com/150" alt="Image of Product 2 description">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <button onclick="addToTrolley('Product 2')" aria-label="Add Product 2 to Trolley">Add to Trolley</button>
+                <button class="like-btn" onclick="toggleLike('Product 2')" aria-label="Like Product 2"><span>❤️</span></button>
+            </article>
+            <article class="product">
+                <img src="https://via.placeholder.com/150" alt="Image of Product 3 description">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+                <button onclick="addToTrolley('Product 3')" aria-label="Add Product 3 to Trolley">Add to Trolley</button>
+                <button class="like-btn" onclick="toggleLike('Product 3')" aria-label="Like Product 3"><span>❤️</span></button>
+            </article>
+        </section>
+        <div class="view-trolley-container">
+            <button onclick="displayTrolley()">View Trolley</button>
+        </div>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Shop Verse. All rights reserved.</p>
+    </footer>
+
+    <div class="sidebar">
+        <button id="sidebar-toggle">☰</button>
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        EMC
+    </title>
+    <link rel="icon" href="pic/iron man.jpg">
+</head>
+<body bgcolor="white" style="color:black;">
+    <center>
+        <h1>Errors make clever🛩️</h1>
+        <h3>Traning | Tech News | Freshers Guide</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam totam animi quas rem fugiat saepe cupidita👍</p>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=ENLG36BqD8djq4om" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa nisi vel, reprehenderit eveniet quidem officiis asperiores molestias quibusdam expedita obcaecati aliquam itaque amet distinctio enim quia corrupti sit, voluptatum cupiditate nostrum veniam est. Itaque, suscipit officia odio labore reprehenderit excepturi voluptates modi ipsum esse rem ad ullam repudiandae quam!</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum neque sapiente ab recusandae maiores? Aliquam accusantium reiciendis autem provident quia sint aperiam optio ullam! Ipsum vero ea nam quas?</p>
+    <h2>List divide Full stack into 3 parts</h2>
+    <ul>
+        <li>Frondend</li>
+        <li>Backend</li>
+        <li>Database</li>
+    </ul>
+    <h2>Technologies Used for full stack development</h2>
+    <table border="1">
+        <tr>
+            <td>Frontend</td><td>Baxkend</td><td>Database</td>
+        </tr>
+        <tr>
+            <td>CSS</td><td>Pytype</td><td>My SQL</td>
+        </tr>
+        <tr>
+            <td>Javascript</td><td>NOde JS</td><td>AWS</td>
+
+        </tr>
+
+    </table>
+    <center>
+    <a href="file:///C:/Users/dsdha/Desktop/html%20project/pro-2.html"><button><h3>-->For Registration</h3></button></a>
+    </center>
+
+</body>

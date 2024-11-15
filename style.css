@@ -204,7 +204,7 @@ footer {
 .sidebar {
     position: fixed;
     left: -200px; /* Hide off-screen */
-    top: 0;
+    top: 0; 
     width: 209px;
     height: 100%;
     background-color: #ffffff;
